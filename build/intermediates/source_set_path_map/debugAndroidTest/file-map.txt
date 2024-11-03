@@ -1,0 +1,5 @@
+com.hm.hustmedia.test.app-androidTest-0 /Users/dangtin306/Documents/android/app/build/generated/res/resValues/androidTest/debug
+com.hm.hustmedia.test.app-androidTest-1 /Users/dangtin306/Documents/android/app/build/generated/res/rs/androidTest/debug
+com.hm.hustmedia.test.app-mergeDebugAndroidTestResources-2 /Users/dangtin306/Documents/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.hm.hustmedia.test.app-mergeDebugAndroidTestResources-3 /Users/dangtin306/Documents/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.hm.hustmedia.test.app-merged_res-4 /Users/dangtin306/Documents/android/app/build/intermediates/merged_res/debugAndroidTest

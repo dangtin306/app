@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    package="com.hm.hustmedia"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.READ_CLIPBOARD" />-->
+    <uses-permission android:name="android.permission.WRITE_CLIPBOARD" />
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<!--    <uses-permission android:name="android.permission.CAMERA" />-->
+
+    <application
+        android:name="com.hm.hustmedia.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4574266110812955~3639285547"/>
+
+        <activity
+
+            android:configChanges="orientation|screenSize"
+            android:name="com.hm.hustmedia.webnhung"
+            android:exported="true">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+
+            android:configChanges="orientation|screenSize"
+            android:name="com.hm.hustmedia.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+
+            android:configChanges="orientation|screenSize"
+            android:name="com.hm.hustmedia.openapp"
+            android:exported="true">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+
+            android:configChanges="orientation|screenSize"
+            android:name="com.hm.hustmedia.splash"
+            android:exported="true">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+
+            android:configChanges="orientation|screenSize"
+            android:name="com.hm.hustmedia.MainActivity"
+            android:exported="false">
+            <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing"
+                android:value="true" />
+            <meta-data
+                android:name="com.google.android.gms.ads.INTEGRATION_MANAGER"
+                android:value="webview"/>
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hm.hustmedia.deeplink"
+            android:label="hust_media"
+            android:exported="true">
+            <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing"
+                android:value="true" />
+            <!-- Intent filter for URLs like "https://hust.media/openhust" or "http://hust.media/app" -->
+            <intent-filter android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="http"
+                    android:host="hust.media"
+                    android:pathPrefix="/openhust" />
+                <data
+                    android:scheme="https"
+                    android:host="hust.media"
+                    android:pathPrefix="/openhust" />
+            </intent-filter>
+
+            <!-- Intent filter for URI like "hustmedia://app" -->
+            <intent-filter android:autoVerify="true">
+
+            <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="openhust"
+                    android:scheme="hustmedia" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hm.hustmedia.logingoogle"
+            android:label="hust_media"
+            android:exported="true">
+
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+            <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-4574266110812955~3639285547"/>
+        </activity>
+        <activity
+            android:name="com.hm.hustmedia.RewardActivity"
+            android:label="hust_media"
+            android:exported="true">
+            <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-4574266110812955~3639285547"/>
+            <!-- Intent filter for URLs like "https://hust.media/openhust" or "http://hust.media/app" -->
+
+            <!-- Intent filter for URI like "hustmedia://app" -->
+            <intent-filter android:autoVerify="true">
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="openhust"
+                    android:scheme="hustmedia" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

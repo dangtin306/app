@@ -1,0 +1,625 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.hm.hustmedia"
+4    android:versionCode="22"
+5    android:versionName="22" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:7:5-78
+11-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:7:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:8:5-67
+12-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+13-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:9:5-81
+13-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:9:22-78
+14    <!-- <uses-permission android:name="android.permission.READ_CLIPBOARD" /> -->
+15    <uses-permission android:name="android.permission.WRITE_CLIPBOARD" />
+15-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:11:5-74
+15-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:11:22-71
+16    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:13:5-80
+17-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:13:22-77
+18    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+18-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:14:5-80
+18-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:14:22-77
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:7:5-78
+19-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:7:22-76
+20    <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> <!-- Android package visibility setting -->
+20-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:25:5-79
+20-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:25:22-76
+21    <queries>
+21-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:28:5-44:15
+22
+23        <!-- For browser content -->
+24        <intent>
+24-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:31:9-37:18
+25            <action android:name="android.intent.action.VIEW" />
+25-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:97:13-65
+25-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:97:21-62
+26
+27            <category android:name="android.intent.category.BROWSABLE" />
+27-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:99:17-78
+27-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:99:27-75
+28
+29            <data android:scheme="https" />
+29-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:100:17-103:54
+29-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:101:21-42
+30        </intent>
+31        <!-- End of browser content -->
+32        <!-- For CustomTabsService -->
+33        <intent>
+33-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:40:9-42:18
+34            <action android:name="android.support.customtabs.action.CustomTabsService" />
+34-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:41:13-90
+34-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:41:21-87
+35        </intent>
+36        <!-- End of CustomTabsService -->
+37    </queries>
+38
+39    <uses-permission android:name="android.permission.WAKE_LOCK" />
+39-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /Users/dangtin306/.gradle/caches/transforms-3/6e601d6ca65bf1056e686dd0047b50a3/transformed/jetified-play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:25:5-68
+39-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /Users/dangtin306/.gradle/caches/transforms-3/6e601d6ca65bf1056e686dd0047b50a3/transformed/jetified-play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:25:22-65
+40    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+40-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:5-81
+40-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:22-78
+41    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+41-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:28:5-77
+41-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:28:22-74
+42    <application
+42-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:18:5-155:19
+43        android:name="com.hm.hustmedia.MyApplication"
+43-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:19:9-54
+44        android:allowBackup="true"
+44-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:20:9-35
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.8.0] /Users/dangtin306/.gradle/caches/transforms-3/f8ca33f57cc610a0b1ed31d0cc4084bb/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+46        android:icon="@mipmap/ic_launcher"
+46-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:21:9-43
+47        android:label="@string/app_name"
+47-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:22:9-41
+48        android:theme="@style/AppTheme" >
+48-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:23:9-40
+49        <meta-data
+49-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:25:9-27:69
+50            android:name="com.google.android.gms.ads.APPLICATION_ID"
+50-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:26:13-69
+51            android:value="ca-app-pub-4574266110812955~3639285547" />
+51-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:27:13-67
+52
+53        <activity
+53-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:29:9-39:20
+54            android:name="com.hm.hustmedia.webnhung"
+54-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:32:13-53
+55            android:configChanges="orientation|screenSize"
+55-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:31:13-59
+56            android:exported="true" >
+56-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:33:13-36
+57            <intent-filter>
+57-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:34:13-38:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:17-69
+58-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:25-66
+59
+60                <category android:name="android.intent.category.DEFAULT" />
+60-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:17-76
+60-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:27-73
+61            </intent-filter>
+62        </activity>
+63        <activity
+63-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:40:9-50:20
+64            android:name="com.hm.hustmedia.SplashActivity"
+64-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:43:13-59
+65            android:configChanges="orientation|screenSize"
+65-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:42:13-59
+66            android:exported="true" >
+66-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:44:13-36
+67            <intent-filter>
+67-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:34:13-38:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:17-69
+68-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:25-66
+69
+70                <category android:name="android.intent.category.DEFAULT" />
+70-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:17-76
+70-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:27-73
+71            </intent-filter>
+72        </activity>
+73        <activity
+73-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:51:9-61:20
+74            android:name="com.hm.hustmedia.openapp"
+74-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:54:13-52
+75            android:configChanges="orientation|screenSize"
+75-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:53:13-59
+76            android:exported="true" >
+76-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:55:13-36
+77            <intent-filter>
+77-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:56:13-60:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:17-69
+78-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:59:17-77
+80-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:59:27-74
+81            </intent-filter>
+82        </activity>
+83        <activity
+83-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:62:9-72:20
+84            android:name="com.hm.hustmedia.splash"
+84-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:65:13-51
+85            android:configChanges="orientation|screenSize"
+85-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:64:13-59
+86            android:exported="true" >
+86-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:66:13-36
+87            <intent-filter>
+87-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:34:13-38:29
+88                <action android:name="android.intent.action.MAIN" />
+88-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:17-69
+88-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:25-66
+89
+90                <category android:name="android.intent.category.DEFAULT" />
+90-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:17-76
+90-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:27-73
+91            </intent-filter>
+92        </activity>
+93        <activity
+93-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:73:9-88:20
+94            android:name="com.hm.hustmedia.MainActivity"
+94-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:76:13-57
+95            android:configChanges="orientation|screenSize"
+95-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:75:13-59
+96            android:exported="false" >
+96-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:77:13-37
+97            <meta-data
+97-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:78:13-79:40
+98                android:name="android.webkit.WebView.EnableSafeBrowsing"
+98-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:78:24-80
+99                android:value="true" />
+99-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:79:17-37
+100            <meta-data
+100-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:80:13-82:42
+101                android:name="com.google.android.gms.ads.INTEGRATION_MANAGER"
+101-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:81:17-78
+102                android:value="webview" />
+102-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:82:17-40
+103
+104            <intent-filter>
+104-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:34:13-38:29
+105                <action android:name="android.intent.action.MAIN" />
+105-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:17-69
+105-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:36:25-66
+106
+107                <category android:name="android.intent.category.DEFAULT" />
+107-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:17-76
+107-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:27-73
+108            </intent-filter>
+109        </activity>
+110        <activity
+110-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:89:9-121:20
+111            android:name="com.hm.hustmedia.deeplink"
+111-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:90:13-53
+112            android:exported="true"
+112-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:92:13-36
+113            android:label="hust_media" >
+113-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:91:13-39
+114            <meta-data
+114-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:78:13-79:40
+115                android:name="android.webkit.WebView.EnableSafeBrowsing"
+115-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:78:24-80
+116                android:value="true" />
+116-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:79:17-37
+117            <!-- Intent filter for URLs like "https://hust.media/openhust" or "http://hust.media/app" -->
+118            <intent-filter android:autoVerify="true" >
+118-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:96:13-108:29
+118-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:96:28-53
+119                <action android:name="android.intent.action.VIEW" />
+119-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:97:13-65
+119-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:97:21-62
+120
+121                <category android:name="android.intent.category.DEFAULT" />
+121-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:17-76
+121-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:27-73
+122                <category android:name="android.intent.category.BROWSABLE" />
+122-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:99:17-78
+122-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:99:27-75
+123
+124                <data
+124-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:100:17-103:54
+125                    android:host="hust.media"
+125-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:102:21-46
+126                    android:pathPrefix="/openhust"
+126-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:103:21-51
+127                    android:scheme="http" />
+127-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:101:21-42
+128                <data
+128-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:100:17-103:54
+129                    android:host="hust.media"
+129-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:102:21-46
+130                    android:pathPrefix="/openhust"
+130-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:103:21-51
+131                    android:scheme="https" />
+131-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:101:21-42
+132            </intent-filter>
+133
+134            <!-- Intent filter for URI like "hustmedia://app" -->
+135            <intent-filter android:autoVerify="true" >
+135-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:111:13-120:29
+135-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:111:28-53
+136                <action android:name="android.intent.action.VIEW" />
+136-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:97:13-65
+136-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:97:21-62
+137
+138                <category android:name="android.intent.category.DEFAULT" />
+138-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:17-76
+138-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:27-73
+139                <category android:name="android.intent.category.BROWSABLE" />
+139-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:99:17-78
+139-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:99:27-75
+140
+141                <data
+141-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:100:17-103:54
+142                    android:host="openhust"
+142-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:102:21-46
+143                    android:scheme="hustmedia" />
+143-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:101:21-42
+144            </intent-filter>
+145        </activity>
+146        <activity
+146-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:122:9-133:20
+147            android:name="com.hm.hustmedia.logingoogle"
+147-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:123:13-56
+148            android:exported="true"
+148-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:125:13-36
+149            android:label="hust_media" >
+149-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:124:13-39
+150            <meta-data
+150-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:127:13-129:73
+151                android:name="com.google.android.gms.version"
+151-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:128:17-62
+152                android:value="@integer/google_play_services_version" />
+152-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:129:17-70
+153            <meta-data
+153-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:25:9-27:69
+154                android:name="com.google.android.gms.ads.APPLICATION_ID"
+154-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:26:13-69
+155                android:value="ca-app-pub-4574266110812955~3639285547" />
+155-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:27:13-67
+156        </activity>
+157        <activity
+157-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:134:9-154:20
+158            android:name="com.hm.hustmedia.RewardActivity"
+158-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:135:13-59
+159            android:exported="true"
+159-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:137:13-36
+160            android:label="hust_media" >
+160-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:136:13-39
+161            <meta-data
+161-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:25:9-27:69
+162                android:name="com.google.android.gms.ads.APPLICATION_ID"
+162-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:26:13-69
+163                android:value="ca-app-pub-4574266110812955~3639285547" />
+163-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:27:13-67
+164            <!-- Intent filter for URLs like "https://hust.media/openhust" or "http://hust.media/app" -->
+165
+166
+167            <!-- Intent filter for URI like "hustmedia://app" -->
+168            <intent-filter android:autoVerify="true" >
+168-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:111:13-120:29
+168-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:111:28-53
+169                <action android:name="android.intent.action.VIEW" />
+169-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:97:13-65
+169-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:97:21-62
+170
+171                <category android:name="android.intent.category.DEFAULT" />
+171-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:17-76
+171-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:37:27-73
+172                <category android:name="android.intent.category.BROWSABLE" />
+172-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:99:17-78
+172-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:99:27-75
+173
+174                <data
+174-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:100:17-103:54
+175                    android:host="openhust"
+175-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:102:21-46
+176                    android:scheme="hustmedia" />
+176-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:101:21-42
+177            </intent-filter>
+178        </activity>
+179        <activity
+179-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:23:9-27:75
+180            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+180-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:24:13-93
+181            android:excludeFromRecents="true"
+181-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:25:13-46
+182            android:exported="false"
+182-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:26:13-37
+183            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+183-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:27:13-72
+184        <!--
+185            Service handling Google Sign-In user revocation. For apps that do not integrate with
+186            Google Sign-In, this service will never be started.
+187        -->
+188        <service
+188-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:33:9-37:51
+189            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+189-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:34:13-89
+190            android:exported="true"
+190-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:35:13-36
+191            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+191-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:36:13-107
+192            android:visibleToInstantApps="true" />
+192-->[com.google.android.gms:play-services-auth:21.0.0] /Users/dangtin306/.gradle/caches/transforms-3/bd0aafac1c68d90a1a710a7dead22008/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:37:13-48
+193
+194        <provider
+194-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dangtin306/.gradle/caches/transforms-3/0804243bad5248514c5a434f41073d07/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+195            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+195-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dangtin306/.gradle/caches/transforms-3/0804243bad5248514c5a434f41073d07/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+196            android:authorities="com.hm.hustmedia.lifecycle-process"
+196-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dangtin306/.gradle/caches/transforms-3/0804243bad5248514c5a434f41073d07/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+197            android:exported="false"
+197-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dangtin306/.gradle/caches/transforms-3/0804243bad5248514c5a434f41073d07/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+198            android:multiprocess="true" />
+198-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dangtin306/.gradle/caches/transforms-3/0804243bad5248514c5a434f41073d07/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+199
+200        <activity
+200-->[com.google.android.gms:play-services-base:18.0.1] /Users/dangtin306/.gradle/caches/transforms-3/13e38bc0a68c75c157006028828b6577/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+201            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+201-->[com.google.android.gms:play-services-base:18.0.1] /Users/dangtin306/.gradle/caches/transforms-3/13e38bc0a68c75c157006028828b6577/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-base:18.0.1] /Users/dangtin306/.gradle/caches/transforms-3/13e38bc0a68c75c157006028828b6577/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+203            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+203-->[com.google.android.gms:play-services-base:18.0.1] /Users/dangtin306/.gradle/caches/transforms-3/13e38bc0a68c75c157006028828b6577/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+204        <activity
+204-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:49:9-53:64
+205            android:name="com.google.android.gms.ads.AdActivity"
+205-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:50:13-65
+206            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+206-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:51:13-122
+207            android:exported="false"
+207-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:52:13-37
+208            android:theme="@android:style/Theme.Translucent" />
+208-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:53:13-61
+209
+210        <provider
+210-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:55:9-59:39
+211            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+211-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:56:13-76
+212            android:authorities="com.hm.hustmedia.mobileadsinitprovider"
+212-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:57:13-73
+213            android:exported="false"
+213-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:58:13-37
+214            android:initOrder="100" />
+214-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:59:13-36
+215
+216        <service
+216-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:61:9-64:40
+217            android:name="com.google.android.gms.ads.AdService"
+217-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:62:13-64
+218            android:enabled="true"
+218-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:63:13-35
+219            android:exported="false" />
+219-->[com.google.android.gms:play-services-ads-lite:21.2.0] /Users/dangtin306/.gradle/caches/transforms-3/b5368a38e5b07b3595d2aeae7574e09c/transformed/jetified-play-services-ads-lite-21.2.0/AndroidManifest.xml:64:13-37
+220
+221        <meta-data
+221-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:127:13-129:73
+222            android:name="com.google.android.gms.version"
+222-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:128:17-62
+223            android:value="@integer/google_play_services_version" />
+223-->/Users/dangtin306/Documents/android/app/src/main/AndroidManifest.xml:129:17-70
+224
+225        <provider
+225-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
+226            android:name="androidx.startup.InitializationProvider"
+226-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
+227            android:authorities="com.hm.hustmedia.androidx-startup"
+227-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
+228            android:exported="false" >
+228-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:34:13-37
+229            <meta-data
+229-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:36:13-38:52
+230                android:name="androidx.work.WorkManagerInitializer"
+230-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:37:17-68
+231                android:value="androidx.startup" />
+231-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:38:17-49
+232        </provider>
+233
+234        <service
+234-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:41:9-46:35
+235            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+235-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:42:13-88
+236            android:directBootAware="false"
+236-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:43:13-44
+237            android:enabled="@bool/enable_system_alarm_service_default"
+237-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:44:13-72
+238            android:exported="false" />
+238-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:45:13-37
+239        <service
+239-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:47:9-53:35
+240            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+240-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:48:13-84
+241            android:directBootAware="false"
+241-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:49:13-44
+242            android:enabled="@bool/enable_system_job_service_default"
+242-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:50:13-70
+243            android:exported="true"
+243-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:51:13-36
+244            android:permission="android.permission.BIND_JOB_SERVICE" />
+244-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:52:13-69
+245        <service
+245-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:54:9-59:35
+246            android:name="androidx.work.impl.foreground.SystemForegroundService"
+246-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:55:13-81
+247            android:directBootAware="false"
+247-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:56:13-44
+248            android:enabled="@bool/enable_system_foreground_service_default"
+248-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:57:13-77
+249            android:exported="false" />
+249-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:58:13-37
+250
+251        <receiver
+251-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:61:9-66:35
+252            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+252-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:62:13-88
+253            android:directBootAware="false"
+253-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:63:13-44
+254            android:enabled="true"
+254-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:64:13-35
+255            android:exported="false" />
+255-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:65:13-37
+256        <receiver
+256-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:67:9-77:20
+257            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+257-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:68:13-106
+258            android:directBootAware="false"
+258-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:69:13-44
+259            android:enabled="false"
+259-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:70:13-36
+260            android:exported="false" >
+260-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:71:13-37
+261            <intent-filter>
+261-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:73:13-76:29
+262                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+262-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:17-87
+262-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:25-84
+263                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+263-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:17-90
+263-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:25-87
+264            </intent-filter>
+265        </receiver>
+266        <receiver
+266-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:78:9-88:20
+267            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+267-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:79:13-104
+268            android:directBootAware="false"
+268-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:80:13-44
+269            android:enabled="false"
+269-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:81:13-36
+270            android:exported="false" >
+270-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:82:13-37
+271            <intent-filter>
+271-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:84:13-87:29
+272                <action android:name="android.intent.action.BATTERY_OKAY" />
+272-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:17-77
+272-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:25-74
+273                <action android:name="android.intent.action.BATTERY_LOW" />
+273-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:17-76
+273-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:25-73
+274            </intent-filter>
+275        </receiver>
+276        <receiver
+276-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:89:9-99:20
+277            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+277-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:90:13-104
+278            android:directBootAware="false"
+278-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:91:13-44
+279            android:enabled="false"
+279-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:92:13-36
+280            android:exported="false" >
+280-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:93:13-37
+281            <intent-filter>
+281-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:95:13-98:29
+282                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+282-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:17-83
+282-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:25-80
+283                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+283-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:17-82
+283-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:25-79
+284            </intent-filter>
+285        </receiver>
+286        <receiver
+286-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:100:9-109:20
+287            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+287-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:101:13-103
+288            android:directBootAware="false"
+288-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:102:13-44
+289            android:enabled="false"
+289-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:103:13-36
+290            android:exported="false" >
+290-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:104:13-37
+291            <intent-filter>
+291-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:106:13-108:29
+292                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+292-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:17-79
+292-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:25-76
+293            </intent-filter>
+294        </receiver>
+295        <receiver
+295-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:110:9-121:20
+296            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+296-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:111:13-88
+297            android:directBootAware="false"
+297-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:112:13-44
+298            android:enabled="false"
+298-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:113:13-36
+299            android:exported="false" >
+299-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:114:13-37
+300            <intent-filter>
+300-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:116:13-120:29
+301                <action android:name="android.intent.action.BOOT_COMPLETED" />
+301-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:17-79
+301-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:25-76
+302                <action android:name="android.intent.action.TIME_SET" />
+302-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:17-73
+302-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:25-70
+303                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+303-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:17-81
+303-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:25-78
+304            </intent-filter>
+305        </receiver>
+306        <receiver
+306-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:122:9-131:20
+307            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+307-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:123:13-99
+308            android:directBootAware="false"
+308-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:124:13-44
+309            android:enabled="@bool/enable_system_alarm_service_default"
+309-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:125:13-72
+310            android:exported="false" >
+310-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:126:13-37
+311            <intent-filter>
+311-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:128:13-130:29
+312                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+312-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:17-98
+312-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:25-95
+313            </intent-filter>
+314        </receiver>
+315        <receiver
+315-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:132:9-142:20
+316            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+316-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:133:13-78
+317            android:directBootAware="false"
+317-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:134:13-44
+318            android:enabled="true"
+318-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:135:13-35
+319            android:exported="true"
+319-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:136:13-36
+320            android:permission="android.permission.DUMP" >
+320-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:137:13-57
+321            <intent-filter>
+321-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:139:13-141:29
+322                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+322-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:17-88
+322-->[androidx.work:work-runtime:2.7.0] /Users/dangtin306/.gradle/caches/transforms-3/3676a8f5802c9e82342e2c03fb5e2e99/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:25-85
+323            </intent-filter>
+324        </receiver>
+325
+326        <service
+326-->[androidx.room:room-runtime:2.2.5] /Users/dangtin306/.gradle/caches/transforms-3/47a31a6953c4c69198e03b31b62e2496/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+327            android:name="androidx.room.MultiInstanceInvalidationService"
+327-->[androidx.room:room-runtime:2.2.5] /Users/dangtin306/.gradle/caches/transforms-3/47a31a6953c4c69198e03b31b62e2496/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+328            android:directBootAware="true"
+328-->[androidx.room:room-runtime:2.2.5] /Users/dangtin306/.gradle/caches/transforms-3/47a31a6953c4c69198e03b31b62e2496/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+329            android:exported="false" />
+329-->[androidx.room:room-runtime:2.2.5] /Users/dangtin306/.gradle/caches/transforms-3/47a31a6953c4c69198e03b31b62e2496/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+330    </application>
+331
+332</manifest>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+
+
+        >
+
+        <Button
+            android:id="@+id/buttonhome"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_x="238dp"
+            android:layout_y="6dp"
+            android:background="#FFC0CB"
+            android:padding="10dp"
+            android:text="tải lại trang"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_x="238dp"
+            android:layout_y="6dp"
+            android:background="#FFC0CB"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="HustMedia" />
+
+
+    </LinearLayout>
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout >
+
+</LinearLayout>

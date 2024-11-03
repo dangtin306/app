@@ -1,0 +1,7 @@
+com.hm.hustmedia.test.BuildConfig
+com.hm.hustmedia.test.R
+com.hm.hustmedia.test.BuildConfig: boolean DEBUG
+com.hm.hustmedia.test.BuildConfig: java.lang.String BUILD_TYPE
+com.hm.hustmedia.test.BuildConfig: java.lang.String APPLICATION_ID
+com.hm.hustmedia.test.R: R()
+com.hm.hustmedia.test.BuildConfig: BuildConfig()

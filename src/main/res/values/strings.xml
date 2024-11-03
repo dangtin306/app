@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_client_id">28575489156-q3lam416p6444d4v4qu7ngiqrqr4ro94.apps.googleusercontent.com</string>
+    <string name="app_name">Hust Media</string>
+    <string name="Test">Open Browser</string>
+    <string name="Home">Home</string>
+    <string name="Back">Quay Lại</string>
+    <bool name="openapp">true</bool>
+</resources>

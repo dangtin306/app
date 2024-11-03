@@ -1,0 +1,4 @@
+#Sun Apr 07 21:38:51 ICT 2024
+base.0=/Users/dangtin306/Documents/android/app/build/intermediates/dex/debugAndroidTest/minifyDebugAndroidTestWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

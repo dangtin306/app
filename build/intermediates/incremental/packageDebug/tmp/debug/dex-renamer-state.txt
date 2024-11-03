@@ -1,0 +1,4 @@
+#Sat Apr 13 16:40:45 ICT 2024
+base.0=/Users/dangtin306/Documents/android/app/build/intermediates/dex/debug/minifyDebugWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/webnhung"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="238dp"
+            android:layout_y="6dp"
+            android:background="#FFC0CB"
+            android:padding="10dp"
+            android:text="@string/Back"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_x="238dp"
+            android:layout_y="6dp"
+            android:background="#FFC0CB"
+            android:padding="10dp"
+            android:text="@string/Home"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <WebView
+        android:id="@+id/activity_mainn_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+    </WebView>
+    </LinearLayout >
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Test"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

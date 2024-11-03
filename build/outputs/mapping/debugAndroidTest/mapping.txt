@@ -1,0 +1,11 @@
+# compiler: R8
+# compiler_version: 4.0.52
+# min_api: 21
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.1"}
+# pg_map_id: 1f2917f
+# pg_map_hash: SHA-256 1f2917fd16db82cf7b28edc044f3a6fe3e558b70577257daf892341dc0aadf0a
+com.hm.hustmedia.test.BuildConfig -> com.hm.hustmedia.test.BuildConfig:
+    6:6:void <init>() -> <init>
+com.hm.hustmedia.test.R -> com.hm.hustmedia.test.R:
+    0:0:void <init>() -> <init>
